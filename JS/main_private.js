@@ -27,7 +27,7 @@ form.addEventListener("submit", async (e) => {
 
 // Validation for form
 function checkInput() {
-  if (walletAddress === "") {
+  if (walletAddress.value === "") {
     addErrorTo("exampleFormControlInput1", "Wallet Address is required!");
   } else {
     removeError("exampleFormControlInput1");
